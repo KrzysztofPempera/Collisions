@@ -1,0 +1,18 @@
+
+<nav class="navbar navbar-expand-sm">
+  <img
+    class="icon"
+    alt="Collisions logo"
+    src="../assets/icons/Kolizje.ico"
+  />
+  <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    &#9776;
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" >
+    <ul class="navbar-nav mr-auto" role="navigation">
+      <li class="nav-item"><a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true"><span class="nav-link-inner">HOME</span></a></li>
+      <li class="nav-item"><a class="nav-link"  routerLink="/pokedex"(click)="isMenuCollapsed = true"><span class="nav-link-inner">DATA</span></a></li>
+    </ul>
+  </div>
+</nav>
