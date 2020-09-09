@@ -9,6 +9,7 @@
 }
 .navbar-toggler:hover{
   background: hsla(0, 0%, 100%, 0.15);
+
 }
 .navbar-toggler:focus{
   background: hsla(0, 0%, 100%, 0.15);
@@ -21,6 +22,7 @@
   margin: 0 16px 0 10px;
   border-radius: 4px;
   padding: 8px 16px;
+  outline: none;
 }
 .nav-link:hover {
   background: hsla(0, 0%, 100%, 0.15);
@@ -38,8 +40,22 @@
   padding: 8px 16px;
 }
 
-.icon{
-  padding-top: 1%;
-  height: 32;
-  width: 32;
+.navbar .mega-dropdown .dropdown-menu {
+  position: fixed;
+  overflow: hidden;
+  box-sizing: content-box;
 }
+.dropdown-menu .dropdown-content {
+  background: white;
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  top: 52px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  box-sizing: content-box;
+}
+
