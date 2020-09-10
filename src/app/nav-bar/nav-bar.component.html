@@ -11,19 +11,27 @@
 
   <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" >
     <ul class="navbar-nav mr-auto" role="navigation">
-      <div class="mega-dropdown" ngbDropdown #homeDropdown="ngbDropdown">
-        <li class="nav-item"><a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true" (mouseover)="homeDropdown.open()"  id="homeDropdown1" ngbDropdownToggle><span class="nav-link-inner">HOME</span></a></li>
-        <div ngbDropdownMenu aria-labeledby="homeDropdown1">
-            <div class="dropdown-content">
-              <button ngbDropdownItem>Action - 1</button>
-              <button ngbDropdownItem>Another Action</button>
-              <button ngbDropdownItem>Something else is here</button>
-            </div>
+
+      <div class="mega-dropdown" >
+        <li class="nav-item"><a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true"><span class="nav-link-inner">HOME</span></a></li>
+        <div  aria-labeledby="homeDropdown">
+          <div class="dropdown-content">
+            <button ngbDropdownItem>Action - 1</button>
+            <button ngbDropdownItem>Another Action</button>
+            <button ngbDropdownItem>Something else is here</button>
+          </div>
         </div>
       </div>
+
       <div class="mega-dropdown">
         <li class="nav-item"><a class="nav-link"  routerLink="/pokedex"(click)="isMenuCollapsed = true"><span class="nav-link-inner">DATA</span></a></li>
+        <div class="dropdown-content">
+          <button ngbDropdownItem>Action - 2</button>
+          <button ngbDropdownItem>Another Action2</button>
+          <button ngbDropdownItem>Something else is here2</button>
+        </div>
       </div>
+
     </ul>
   </div>
 </nav>

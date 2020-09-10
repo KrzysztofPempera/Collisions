@@ -45,17 +45,37 @@
   overflow: hidden;
   box-sizing: content-box;
 }
-.dropdown-menu .dropdown-content {
+
+.mega-dropdown .dropdown-content{
   background: white;
-  display: block;
+  display: none;
   text-align: left;
   margin-top: 0;
-  top: 52px;
+  top: 48px;
   width: 100%;
   position: fixed;
   left: 0;
   right: 0;
-  border-radius: 0;
   box-sizing: content-box;
+  border-bottom: 1px solid #e9ecef;
 }
 
+.mega-dropdown .dropdown-content button{
+  outline: none;
+  color: black;
+}
+
+.mega-dropdown .dropdown-content button:focus {
+  background-color: white;
+}
+
+.mega-dropdown .dropdown-content button:hover {
+  background-color: #e9ecef;
+}
+
+.mega-dropdown .dropdown-content button:active {
+  background-color: #dee1e3;
+}
+.mega-dropdown:hover .dropdown-content{
+  display: block;
+}
